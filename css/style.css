@@ -28,6 +28,7 @@
 .data .data-item p {
   margin: 0px;
   margin-left: 20px;
+  width: 50%;
 }
 
 .input-toDo {
