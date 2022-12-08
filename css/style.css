@@ -1,0 +1,10 @@
+.data {
+  margin-top: 30px;
+}
+.data .data-item {
+  display: flex;
+}
+.data .data-item p {
+  margin: 0px;
+  margin-left: 20px;
+}/*# sourceMappingURL=style.css.map */
