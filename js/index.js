@@ -21,19 +21,21 @@ data.innerHTML = sta
   .join("");
 
 button.addEventListener("click", () => {
-  
-  sta.push(input.value);
-  localStorage.setItem(data, JSON.stringify(sta));
-  input.value=""
-  console.log(sta);
-  data.innerHTML = sta
-    .map(
-      (el, ind) =>
-        `<div class="data-item ">${
-          ind + 1
-        }<p>${el}</p><button class="deleteBtn" data-itemid=${ind}>Удалить</button></div>`
-    )
-    .join("");
+  if(input.value){
+    sta.push(input.value);
+    localStorage.setItem(data, JSON.stringify(sta));
+    input.value=""
+    console.log(sta);
+    data.innerHTML = sta
+      .map(
+        (el, ind) =>
+          `<div class="data-item ">${
+            ind + 1
+          }<p>${el}</p><button class="deleteBtn" data-itemid=${ind}>Удалить</button></div>`
+      )
+      .join("");
+  }
+ 
 });
 
 data.addEventListener("click", (event) => {
