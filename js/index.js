@@ -24,7 +24,7 @@ button.addEventListener("click", () => {
   
   sta.push(input.value);
   localStorage.setItem(data, JSON.stringify(sta));
-  
+  input.value=""
   console.log(sta);
   data.innerHTML = sta
     .map(
