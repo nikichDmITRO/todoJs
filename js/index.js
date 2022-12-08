@@ -16,7 +16,7 @@ data.innerHTML = sta
     (el, ind) =>
       `<div class="data-item ">${
         ind + 1
-      }<p>${el}</p><button class="deleteBtn" data-itemid=${ind}>Удалить заметку</button></div>`
+      }<p>${el}</p><button class="deleteBtn" data-itemid=${ind}>Удалить</button></div>`
   )
   .join("");
 
@@ -31,7 +31,7 @@ button.addEventListener("click", () => {
       (el, ind) =>
         `<div class="data-item ">${
           ind + 1
-        }<p>${el}</p><button class="deleteBtn" data-itemid=${ind}>Удалить заметку</button></div>`
+        }<p>${el}</p><button class="deleteBtn" data-itemid=${ind}>Удалить</button></div>`
     )
     .join("");
 });

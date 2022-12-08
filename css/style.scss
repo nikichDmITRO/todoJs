@@ -1,9 +1,15 @@
+
+body{
+    background-color: rgba(0, 0, 0, 0.171);
+}
 .container{
     margin: 0 auto;
     max-width: 400px;
     
     text-align: center;
     font-size: 20px;
+    font-family: monospace;
+   
 }
 .inp-flex{
     display: flex;
@@ -16,6 +22,11 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+    background-color: rgba(0, 0, 255, 0.212);
+    padding: 5px;
+    border-radius: 2px;
+    align-items: center;
+    font-size: 16px;
 
     .deleteBtn{
         background-color: rgba(255, 0, 0, 0.555);
@@ -23,29 +34,36 @@
         color: white;
         font-size: 16px;
         border-radius: 5px;
+        width: 20%;
+        height: 30px;
     }
     p {
       margin: 0px;
       margin-left: 20px;
-      width: 50%;
+      width: 70%;
+      font-size: 14px;
       
     }
   }
 }
 .input-toDo{
-    max-width: 200px;
+    max-width: 250px;
     font-size: 20px;
     border: none;
-    border-bottom: 1px solid #000;
-    background-color: rgba(0, 0, 255, 0.26);
+    border-bottom: 2px solid #000;
+    background-color: rgba(0, 0, 255, 0.13);
     margin: 0 auto;
+    border-radius: 5px;
+    outline:none;
+
 }
 .buttonAdd{
     margin: 0 auto;
     margin-top: 10px;
     border: none;
     font-size: 20px;
-    background-color: rgba(0, 128, 0, 0.979);
+    background-color: rgba(0, 128, 0, 0.815);
     color: white;
-    padding: 5px;
+    padding: 6px;
+    border-radius: 3px;
 }
